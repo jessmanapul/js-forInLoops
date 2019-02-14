@@ -122,6 +122,11 @@ console.log(countProp(legend));
 /*@param {Object}
 @return {Object}*/
 
+function checkProp(obj, prop) {
+	if (obj.hasOwnProperty(prop)) return true;
+	else return false;
+}
 
-
+console.log(checkProp(legend, 'occupation'));
+console.log(checkProp(legend, 'occ'));
 
