@@ -66,7 +66,12 @@ donutVal(donutBox);
 /*@param {Object}
 @return {Object}*/
 
+function dltTaste(obj) {
+	delete obj.taste;
+	return obj;
+}
 
+console.log(dltTaste(donutBox));
 
 /*4. Create a function that will take in an object and will return all the values of the object in an array.*/
 
