@@ -105,7 +105,17 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 /*@param {Object}
 @return {Number}*/
 
+function countProp(obj) {
+	var num = 0;
+	for (var prop in obj) {
+		if (obj.hasOwnProperty(prop)) {
+			num++;
+		}
+	}
+	return num;
+}
 
+console.log(countProp(legend));
 
 /*6. Create a function that will take in an object and check to see if the legend object has a property of 'occupation'.*/
 
